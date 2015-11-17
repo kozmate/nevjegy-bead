@@ -1,0 +1,135 @@
+{
+  "data": {
+    "contact": [
+      {
+        "status": "new",
+        "contactName": "Kiss József",
+        "phoneNumber": "80 / 567 956",
+        "ownerId": 1,
+        "date": "2015-11-17T10:32:20.826Z",
+        "createdAt": "2015-11-17T10:32:20.829Z",
+        "updatedAt": "2015-11-17T11:59:13.930Z",
+        "id": 2
+      },
+      {
+        "status": "new",
+        "contactName": "Kovács Gerzson",
+        "phoneNumber": "57 / 648 531",
+        "ownerId": 1,
+        "date": "2015-11-17T11:59:00.427Z",
+        "createdAt": "2015-11-17T11:59:00.430Z",
+        "updatedAt": "2015-11-17T11:59:34.134Z",
+        "id": 3
+      },
+      {
+        "status": "new",
+        "contactName": "Árvíztűrő Tükörfúrógép",
+        "phoneNumber": "53 / 954 - 631",
+        "ownerId": 1,
+        "date": "2015-11-17T11:59:54.960Z",
+        "createdAt": "2015-11-17T11:59:54.961Z",
+        "updatedAt": "2015-11-17T12:01:58.982Z",
+        "id": 4
+      }
+    ],
+    "user": [
+      {
+        "lastname": "qwe",
+        "firstname": "qwe",
+        "username": "qwe",
+        "password": "$2a$10$tZAjiRHD1TGmOy.AfbVfUOIwR8kcr1u1V31vNWaFSeei864i/O76O",
+        "role": "riporter",
+        "createdAt": "2015-11-16T20:39:43.471Z",
+        "updatedAt": "2015-11-16T20:39:43.471Z",
+        "id": 1
+      }
+    ]
+  },
+  "schema": {
+    "contact": {
+      "date": {
+        "type": "datetime"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "new",
+          "assigned",
+          "ready",
+          "rejected",
+          "pending"
+        ]
+      },
+      "contactName": {
+        "type": "string"
+      },
+      "phoneNumber": {
+        "type": "string"
+      },
+      "ownerId": {
+        "type": "integer"
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "username": {
+        "type": "string",
+        "unique": true
+      },
+      "password": {
+        "type": "string"
+      },
+      "firstname": {
+        "type": "string"
+      },
+      "lastname": {
+        "type": "string"
+      },
+      "role": {
+        "type": "string",
+        "enum": [
+          "riporter",
+          "operator"
+        ],
+        "defaultsTo": "riporter"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "contact": {
+      "id": 4
+    },
+    "user": {
+      "id": 1
+    }
+  }
+}
