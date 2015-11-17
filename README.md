@@ -84,7 +84,7 @@
 2. Felhasználói felület
 
     - Designterv
-    ![Lista](public/grams/telefonkonyv_list.jpg)
+    ![Lista](public/grams/telefonkonyv_list.JPG)
     
 3. Osztálymodell
 
