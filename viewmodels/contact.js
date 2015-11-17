@@ -4,7 +4,7 @@ var statusTexts = {
     'assigned': 'Feldogozás alatt',
     'ready': 'Kész',
     'rejected': 'A szám nem található',
-    'pending': 'Nincs kész',
+    'pending': 'Téves szám?',
 };
 var statusClasses = {
     'new': 'danger',

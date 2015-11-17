@@ -55,7 +55,7 @@ router.get('/:id', function(req, res) {
 
 
 
-//Új szám POST
+//Új kontakt POST
 router.post('/new', function(req, res) {
     //console.log(req.body);
     
@@ -95,7 +95,7 @@ router.post('/:id', function(req, res) {
     //Név módosítása
     if(req.body.contactName != null){
         var contactName = req.body.contactName;
-        console.log(contactName)
+        console.log(contactName);
     }
 
     if(req.body.contactName != null){
@@ -105,7 +105,7 @@ router.post('/:id', function(req, res) {
         })
         .catch(function (err){
             console.log(err);
-        })
+        });
     }
     
     //Szám módosítása

@@ -1,7 +1,7 @@
 {
-  "name": "phones",
+  "name": "kozmate",
   "version": "0.0.1",
-  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "description": "",
   "main": "server.js",
   "author": "Mostafa Eweda <mo.eweda@gmail.com>",
   "dependencies": {
@@ -24,5 +24,13 @@
     "start": "node server.js"
   },
   "devDependencies": {},
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kozmate/nevjegy-bead.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kozmate/nevjegy-bead/issues"
+  },
+  "homepage": "https://github.com/kozmate/nevjegy-bead#readme"
 }

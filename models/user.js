@@ -21,18 +21,13 @@ module.exports = {
             type: 'string',
             required: true,
         },
-        avatar: {
-            type: 'string',
-            url: true,
-        },
         role: {
             type: 'string',
             enum: ['riporter', 'operator'],
             required: true,
             defaultsTo: 'riporter'
         },
-        
-        lessons: {
+        contacts: {
             collection: 'contact',
             via: 'user'
         },

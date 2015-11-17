@@ -11,7 +11,7 @@
         ">
             <label for="contactName" class="col-lg-2 control-label">Név</label>
             <div class="col-xs-3">
-                <input class="form-control" id="contactName" name="contactName" value={{contact.contactName}} type="text" value="{{data.contactName}}">
+                <input class="form-control" id="contactName" name="contactName" value="{{contact.contactName}}" type="text" value="{{data.contactName}}">
                 {{#if validationErrors.contactName}}
                     <span class="help-block">{{validationErrors.contactName.msg}}</span>
                 {{/if}}
@@ -24,7 +24,7 @@
         ">
             <label for="phoneNumber" class="col-lg-2 control-label">Telefonszám</label>
             <div class="col-xs-3">
-                <input class="form-control" id="phoneNumber" name="phoneNumber" value={{contact.contactName}} type="text" value="{{data.phoneNumber}}">
+                <input class="form-control" id="phoneNumber" name="phoneNumber" value="{{contact.phoneNumber}}" type="text" value="{{data.phoneNumber}}">
                 {{#if validationErrors.phoneNumber}}
                     <span class="help-block">{{validationErrors.phoneNumber.msg}}</span>
                 {{/if}}
